@@ -14,7 +14,8 @@ header {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color:#3c4245
+    color:#3c4245;
+    line-height: 1.5;
 }
 
 p {
@@ -43,12 +44,15 @@ img {
 
 .grid {
     display: grid;
-    grid-gap: 32px;
 }
 
 .grid-2-col {
     grid-template-columns: 1fr 1fr;
-    padding: 10px;
+}
+
+.grid-3-col-footer {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 15px;
 }
 
 .overview {
@@ -58,7 +62,9 @@ img {
 
 .overview p {
     color: #dfcdc3;
-    margin: 2px auto;
+    font-size: 16px;
+    margin: 25px;
+    line-height: 1.5;
 }
 
 .quote {
@@ -70,16 +76,83 @@ img {
     color:#dfcdc3
 }
 
+section {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+section h3 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: var(--primary-font);
+}
+
+section p {
+    font-size: 14px;
+}
+
+section ul {
+    padding: 0;
+}
+
+section li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+section a {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+section a:hover {
+    font: size 24px;
+    background-color: #5f6769;
+    color: #719192;
+}
+
+section p {
+    margin: 10px;
+}
+
 footer {
+    background: linear-gradient(rgba(39, 32, 68, 0.6), rgba(39, 32, 68, 0.6));
     text-align: center;
     font-size: 14px;
     padding: 15px 0;
+    max-width: 1200px;
+    margin: auto;
 }
 
+footer p {
+    color: #dfcdc3;
+    font-size: 16px;
+}
+
+footer a{
+    font-weight: 500;
+}
+
+footer a:hover {
+    font: size 20px;
+    background-color: #719192;
+    color:#dfcdc3;
+}
 
 @media (max-width: 900px) {
     header:{
         padding: 40px 0;
+    }
+
+    .overview p {
+        margin: 15px;
+        line-height: 1.2;
     }
 
     .grid {
@@ -87,4 +160,5 @@ footer {
         grid-gap: 32px;
         padding: 5px;
     }
+
 }

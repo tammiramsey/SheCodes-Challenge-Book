@@ -5,12 +5,20 @@ header {
     padding: 20px 0;
 }
 
+.header {
+    color: #719192;
+}
+
+.title {
+    font-style: italic;
+}
+
 h1, h2, h3, h4, h5, h6 {
     color:#3c4245
 }
 
 p {
-    color: #5f6769
+    color: #5f6769;
 }
 
 a {
@@ -29,8 +37,54 @@ img {
     height: 350px;
 }
 
+.container {
+    padding: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 32px;
+}
+
+.grid-2-col {
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+}
+
+.overview {
+    background-color: #719192;
+    margin: 10px 0;
+}
+
+.overview p {
+    color: #dfcdc3;
+    margin: 2px auto;
+}
+
+.quote {
+    background-color: #5f6769;
+    margin: 10px 0;
+}
+
+.quote p {
+    color:#dfcdc3
+}
+
 footer {
     text-align: center;
     font-size: 14px;
     padding: 15px 0;
+}
+
+
+@media (max-width: 900px) {
+    header:{
+        padding: 40px 0;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        grid-gap: 32px;
+        padding: 5px;
+    }
 }

@@ -38,16 +38,14 @@ img {
     height: 350px;
 }
 
-.container {
-    padding: 0 auto;
-}
-
 .grid {
     display: grid;
 }
 
 .grid-2-col {
     grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    margin: 10px;
 }
 
 .grid-3-col-footer {
@@ -58,6 +56,12 @@ img {
 .overview {
     background-color: #719192;
     margin: 10px 0;
+    padding: 0 auto;
+}
+
+.overview h3 {
+    font-size: 24px;
+    padding: 10px;
 }
 
 .overview p {
@@ -72,8 +76,16 @@ img {
     margin: 10px 0;
 }
 
+.quote h3 {
+    font-size: 24px;
+    padding: 10px;
+}
+
 .quote p {
-    color:#dfcdc3
+    color: #dfcdc3;
+        font-size: 16px;
+        margin: 25px;
+        line-height: 1.5;
 }
 
 section {

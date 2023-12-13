@@ -130,6 +130,10 @@ section a:hover {
     color: #719192;
 }
 
+.spotify {
+    text-align: right;
+}
+
 .music {
    height: 75px
 }
@@ -172,6 +176,10 @@ footer a:hover {
         grid-template-columns: 1fr;
         grid-gap: 32px;
         padding: 5px;
+    }
+
+    .spotify{
+        text-align: center;
     }
 
     .music {

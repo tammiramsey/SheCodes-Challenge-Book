@@ -134,7 +134,8 @@ section p {
 }
 
 .music {
-   height: 250px;
+   height: 250px
+   display: inline;
 }
 
 footer {

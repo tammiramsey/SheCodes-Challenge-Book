@@ -1,12 +1,13 @@
 /* this style sheet needs to be put in the style tags before submitting */
 
 header {
-    text-align: center;
+    text-align: left;
     padding: 20px 0;
 }
 
 .header {
     color: #719192;
+    margin: 15px;
 }
 
 .title {
@@ -35,7 +36,7 @@ body {
 }
 
 img {
-    height: 350px;
+    height: 450px;
 }
 
 .grid {
@@ -134,7 +135,7 @@ section a:hover {
     text-align: right;
 }
 
-.music {
+.kitchen {
    height: 75px
 }
 
@@ -165,6 +166,15 @@ footer a:hover {
 @media (max-width: 900px) {
     header:{
         padding: 40px 0;
+        text-align: center;
+    }
+
+    img {
+        height: 250px;
+    }
+
+    .title {
+        font-size: 20px;
     }
 
     .overview p {
@@ -182,7 +192,12 @@ footer a:hover {
         text-align: center;
     }
 
-    .music {
+    .header{
+        text-align: center;
+    }
+
+    .kitchen {
+        height: 50px;
         display: block;
         margin-left: auto;
         margin-right: auto;

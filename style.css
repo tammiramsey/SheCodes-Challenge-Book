@@ -103,6 +103,7 @@ section h3 {
 
 section p {
     font-size: 14px;
+    margin: 10px;
 }
 
 section ul {
@@ -127,10 +128,6 @@ section a:hover {
     font: size 24px;
     background-color: #5f6769;
     color: #719192;
-}
-
-section p {
-    margin: 10px;
 }
 
 .music {

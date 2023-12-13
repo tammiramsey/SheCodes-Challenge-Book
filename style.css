@@ -133,6 +133,10 @@ section p {
     margin: 10px;
 }
 
+.music {
+    grid-gap: 10px;
+}
+
 footer {
     background: linear-gradient(rgba(39, 32, 68, 0.6), rgba(39, 32, 68, 0.6));
     text-align: center;

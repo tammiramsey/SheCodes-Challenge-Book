@@ -84,9 +84,14 @@ img {
 
 .quote p {
     color: #dfcdc3;
-        font-size: 16px;
-        margin: 25px;
-        line-height: 1.5;
+    font-size: 16px;
+    margin: 25px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.personal {
+    padding: 15px;
 }
 
 section {
@@ -201,7 +206,6 @@ footer a:hover {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        
     }
-
+  
 }

@@ -75,6 +75,7 @@ img {
 .grid-3-col-footer {
     grid-template-columns: 1fr 1fr 1fr;
     margin: 15px;
+    padding: 15px auto;
 }
 
 .overview {
@@ -208,6 +209,11 @@ footer a:hover {
     border-radius: 4px;
 }
 
+.darkMode .darkModeButton {
+    background-color: #302939;
+    color:#ffd8d8;
+}
+
     .darkMode {
         background-color: #302939;
         color: #ffaaa5;
@@ -220,10 +226,15 @@ footer a:hover {
     .darkMode .container {
         background-color: #3c4245;
         padding: 15px;
+        border-radius: 4px;
     }
 
     .darkMode .title {
         color: #ffaaa5;
+    }
+
+    .darkMode #author {
+        color:#719192;
     }
 
     .darkMode a {
@@ -234,8 +245,18 @@ footer a:hover {
         color: #ffd8d8;
     }
 
+    .darkMode .overview {
+        background-color: #5f6769;
+        border-radius: 4px;
+    }
+
+    .darkMode .quote {
+        border-radius: 4px;
+    }
+
     .darkMode .personal {
         background-color: #719192;
+        border-radius: 4px;
     }
 
     .darkMode .personal h3 {
@@ -250,8 +271,16 @@ footer a:hover {
         color: #ffaaa5;
     }
 
+    .darkMode .info-text {
+        color: #ffd8d8;
+    }
+
     .darkMode .spotify {
         color: #ffaaa5;
+    }
+
+    .darkMode footer{
+        border-radius: 4px;
     }
 
 @media (max-width: 900px) {
@@ -334,7 +363,7 @@ footer a:hover {
                 </div>
                 <div class="col">
                     <h1 class="title">Because of Sex: One Law, Ten Cases, and Fifty Years That Changed American Women's Lives at Work</h1>
-                    <h3 class="title">by Gillian Thomas</h3> 
+                    <h3 class="title" id="author">by Gillian Thomas</h3> 
                 </div>
             </div>
         </div>
@@ -459,8 +488,8 @@ footer a:hover {
 
     <div>
         <h3 class="info">Podcasts & Interviews</h3>
-        <p><a href="https://www.dissentmagazine.org/blog/belabored-podcast-99-sex-gillian-thomas/" target="_blank">Belabored Podcast</a> by <em>Dissent</em> Magazie</p>
-        <p><a href="https://www.aclu.org/podcast/the-decade-long-fight-for-pregnant-workers" target="_blank">Liberty Podcast</a> by the American Civil Liberties Union </p>
+        <p class="info-text"><a href="https://www.dissentmagazine.org/blog/belabored-podcast-99-sex-gillian-thomas/" target="_blank">Belabored Podcast</a> by <em>Dissent</em> Magazie</p>
+        <p class="info-text"><a href="https://www.aclu.org/podcast/the-decade-long-fight-for-pregnant-workers" target="_blank">Liberty Podcast</a> by the American Civil Liberties Union </p>
     </div>
 </section>
 
@@ -503,7 +532,7 @@ footer a:hover {
         
         <p>This site is <a href="https://github.com/tammiramsey/SheCodes-Challenge-Book" target="_blank"> open source</a> <i class="fa fa-brands fa-github" style="color: #FFF;"></i> </p>
 
-        <button class="darkModeButton"> Dark Mode</button>
+        <button class="darkModeButton" id="button"> Dark Mode</button>
     </footer>
 
     <script>
@@ -511,14 +540,19 @@ footer a:hover {
             let body = document.querySelector("body");
             if (body.classList.contains("darkMode")) {
                 body.classList.remove("darkMode");
+                document.getElementById("button").innerHTML = "Dark Mode";
+                
             }
             else {
                 body.classList.add("darkMode");
+                document.getElementById("button").innerHTML = "Light Mode";
             }
         }
 
-        let theme = document.querySelector(".darkModeButton")
-        theme.addEventListener('click', changeMode)
+        let theme = document.querySelector(".darkModeButton");
+        theme.addEventListener('click', changeMode);
+
+        
 
     </script>
 

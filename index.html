@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial scale=1.0" />
 
     <!--google fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Handlee&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
 
     <!--fontawesome kit-->
 <script src="https://kit.fontawesome.com/8683d2a815.js" crossorigin="anonymous"></script>
@@ -18,9 +23,14 @@
             integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
             crossorigin="anonymous"></script>
 
-    <!--css page-->
+    
     <style>
-        /* this style sheet needs to be put in the style tags before submitting */
+
+:root {
+    --primary-font: 'Raleway', sans-serif;
+    --secondary-font: 'Yanone Kaffeesatz', sans-serif;
+    --personal-font:  'Handlee', cursive;
+}
 
 header {
     text-align: left;
@@ -30,20 +40,25 @@ header {
 .header {
     color: #719192;
     margin: 15px;
+    font-size: 36px;
 }
 
 .title {
     font-style: italic;
-    color:#5f6769
+    color:#5f6769;
+    font-size: 32px;
 }
 
 h1, h2, h3, h4, h5, h6 {
     color:#3c4245;
     line-height: 1.5;
+    font: var(--primary-font);
 }
 
 p {
     color: #5f6769;
+    font: var(--primary-font);
+    font-size: 20px;
 }
 
 a {
@@ -85,7 +100,7 @@ img {
 }
 
 .overview h3 {
-    font-size: 24px;
+    font-size: 32px;
     padding: 10px;
 }
 
@@ -97,12 +112,12 @@ img {
 }
 
 .quote {
-    background-color: #5f6769;
+    background-color: #719192;
     margin: 10px 0;
 }
 
 .quote h3 {
-    font-size: 24px;
+    font-size: 32px;
     padding: 10px;
 }
 
@@ -115,15 +130,30 @@ img {
 }
 
 .personal {
+    background-color: #5f6769;
     padding: 15px;
+    
 }
 
-.personal h3 {
-    color:#5f6769;
+.personal h3{
+    font-size: 32px;
+}
+
+.personal h3, p {
+    color:#ffd8d8;
+    font: var(--personal-font);
+}
+
+.personal a {
+    font-weight: 700;
 }
 
 .info {
     color:#5f6769;
+}
+
+.info-text {
+    color: #5f6769;
 }
 
 section {
@@ -136,7 +166,6 @@ section h3 {
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
-    font-family: var(--primary-font);
 }
 
 section p {
@@ -179,7 +208,6 @@ section a:hover {
 
 footer {
     background-color: #5f6769;
-    /*linear-gradient(rgba(39, 32, 68, 0.6), rgba(39, 32, 68, 0.6));*/
     text-align: center;
     font-size: 14px;
     padding: 15px 0;
@@ -190,6 +218,7 @@ footer {
 footer p {
     color: #dfcdc3;
     font-size: 16px;
+    font: var(--secondary-font);
 }
 
 footer a{
@@ -319,6 +348,7 @@ footer a:hover {
 
     .spotify{
         text-align: center;
+        font-size: 32px;
     }
 
     .header{
@@ -402,7 +432,7 @@ footer a:hover {
 
             <div class="quote text-center">
                 <h3>Highlights </h3>
-                <h5>Here are some of my favorite snippets from the book</h5>
+                <h5><em>Here are some of my favorite snippets from the book</em></h5>
                 <p>"[Howard] Smith played his "little amendment" for laugh, claiming to have been inspired by a letter he had received 
                     a female constituent. She asked the government to "protect our spinster friends," who were suffering from a
                     shortage of eligable bachelors. Over guffaws from his virutally all-male audience, Smith concluded, "I read that letter to just
@@ -528,7 +558,7 @@ footer a:hover {
 
     <footer>
         <p>This page was created by <a href="https://www.linkedin.com/in/tammi-ramsey/" target="_blank">Tammi Ramsey</a> <i class="fa fa-brands fa-linkedin" style="color: #FFF;"></i> for the 
-            <a href="https://www.shecodes.io/contests/life-changing-book" target="_blank">2023 SheCodes Challenge </a></p>
+            <a href="https://www.shecodes.io/contests/life-changing-book" target="_blank">2023 SheCodes Challenge </a> about a life-changing book</p>
         
         <p>This site is <a href="https://github.com/tammiramsey/SheCodes-Challenge-Book" target="_blank"> open source</a> <i class="fa fa-brands fa-github" style="color: #FFF;"></i> </p>
 

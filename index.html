@@ -52,12 +52,12 @@ header {
 h1, h2, h3, h4, h5, h6 {
     color:#3c4245;
     line-height: 1.5;
-    font: var(--primary-font);
+    font-family: var(--primary-font);
 }
 
 p {
     color: #5f6769;
-    font: var(--primary-font);
+    font-family: var(--primary-font);
     font-size: 20px;
 }
 
@@ -109,6 +109,7 @@ img {
     font-size: 16px;
     margin: 25px;
     line-height: 1.5;
+    font-family: var(--primary-font);
 }
 
 .quote {
@@ -126,6 +127,7 @@ img {
     font-size: 16px;
     margin: 25px;
     line-height: 1.5;
+    font-family: var(--primary-font);
     text-align: left;
 }
 
@@ -141,19 +143,25 @@ img {
 
 .personal h3, p {
     color:#ffd8d8;
-    font: var(--personal-font);
+    font-family: var(--personal-font);
 }
 
 .personal a {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .info {
     color:#5f6769;
+    font-family: var(--primary-font);
+}
+
+.info {
+    font-family: var(--primary-font);
 }
 
 .info-text {
     color: #5f6769;
+    font-family: var(--primary-font);
 }
 
 section {
@@ -217,8 +225,8 @@ footer {
 
 footer p {
     color: #dfcdc3;
-    font-size: 16px;
-    font: var(--secondary-font);
+    font-size: 18px;
+    font-family: var(--secondary-font);
 }
 
 footer a{
@@ -281,6 +289,7 @@ footer a:hover {
 
     .darkMode .quote {
         border-radius: 4px;
+        background-color: #5f6769;
     }
 
     .darkMode .personal {
@@ -316,6 +325,10 @@ footer a:hover {
     header {
         padding: 40px 0;
         text-align: center;
+    }
+
+    .header {
+        font-size: 30px;
     }
 
     img {
@@ -432,7 +445,7 @@ footer a:hover {
 
             <div class="quote text-center">
                 <h3>Highlights </h3>
-                <h5><em>Here are some of my favorite snippets from the book</em></h5>
+                <h6><em>Here are some of my favorite snippets from the book</em></h6>
                 <p>"[Howard] Smith played his "little amendment" for laugh, claiming to have been inspired by a letter he had received 
                     a female constituent. She asked the government to "protect our spinster friends," who were suffering from a
                     shortage of eligable bachelors. Over guffaws from his virutally all-male audience, Smith concluded, "I read that letter to just
@@ -502,17 +515,17 @@ footer a:hover {
     <div>
         <h3 class="info">Where to Buy</h3>
         <ul>
-            <li><p><a href="https://www.indiebound.org/indie-store-finder" target="_blank">Indepedent Bookstores</a></p></li>
-            <li><p><a href="https://www.amazon.com/gp/product/1137280050/ref=x_gr_bb_amazon?ie=UTF8&tag=x_gr_bb_amazon-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=1137280050&SubscriptionId=1MGPYB6YW3HWK55XCGG2" target="_blank"> Amazon</a></p></li>
-            <li><p><a href="https://www.amazon.com/Because-of-Sex-Gillian-Thomas-audiobook/dp/B07RP1SVZV/ref=sr_1_1?keywords=Because+of+Sex&qid=1701974544&s=audible&sr=1-1" target="_blank">Audible</a></p></li>
-            <li><p><a href="https://www.berlin.de/en/public-transportation/" target="_blank">Barnes & Noble </a></p></li>
+            <li ><p class="info-text"><a href="https://www.indiebound.org/indie-store-finder" target="_blank">Indepedent Bookstores</a></p></li>
+            <li><p class="info-text"><a href="https://www.amazon.com/gp/product/1137280050/ref=x_gr_bb_amazon?ie=UTF8&tag=x_gr_bb_amazon-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=1137280050&SubscriptionId=1MGPYB6YW3HWK55XCGG2" target="_blank"> Amazon</a></p></li>
+            <li><p class="info-text"><a href="https://www.amazon.com/Because-of-Sex-Gillian-Thomas-audiobook/dp/B07RP1SVZV/ref=sr_1_1?keywords=Because+of+Sex&qid=1701974544&s=audible&sr=1-1" target="_blank">Audible</a></p></li>
+            <li><p class="info-text"><a href="https://www.berlin.de/en/public-transportation/" target="_blank">Barnes & Noble </a></p></li>
         </ul>
     </div>
 
     <div>
         <h3 class="info">Reviews</h3>
-            <p><a href="https://www.goodreads.com/book/show/25663714-because-of-sex" target="_blank">GoodReads</a></p>
-            <p><a href="https://www.nytimes.com/2016/03/13/books/review/because-of-sex-by-gillian-thomas.html" target="_blank"><em>The New York Times</em></a> </p>
+            <p class="info-text"><a href="https://www.goodreads.com/book/show/25663714-because-of-sex" target="_blank">GoodReads</a></p>
+            <p class="info-text"><a href="https://www.nytimes.com/2016/03/13/books/review/because-of-sex-by-gillian-thomas.html" target="_blank"><em>The New York Times</em></a> </p>
           
     </div>
 

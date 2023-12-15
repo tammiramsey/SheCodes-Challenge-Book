@@ -116,6 +116,14 @@ img {
     padding: 15px;
 }
 
+.personal h3 {
+    color:#5f6769;
+}
+
+.info {
+    color:#5f6769;
+}
+
 section {
     max-width: 100%;
     margin: 0 auto;
@@ -160,6 +168,7 @@ section a:hover {
 
 .spotify {
     text-align: right;
+    color: #363c3e;
 }
 
 .kitchen {
@@ -191,6 +200,57 @@ footer a:hover {
     color:#dfcdc3;
 }
 
+.darkModeButton {
+    background-color: #3c4245;
+    color: #dfcdc3;
+    border: 3px solid #719192:
+}
+
+    .darkMode {
+        background-color: #302939;
+        color: #ffaaa5;
+    }
+
+    .darkMode .header {
+        color: #ffaaa5;
+    }
+
+    .darkMode .container {
+        background-color: #3c4245;
+    }
+
+    .darkMode .title {
+        color: #ffaaa5;
+    }
+
+    .darkMode a {
+        color: #ffd8d8;
+    }
+
+    .darkMode h1, h2, h3 {
+        color: #ffd8d8;
+    }
+
+    .darkMode .personal {
+        background-color: #719192;
+    }
+
+    .darkMode .personal h3 {
+        color: #ffd8d8;
+    }
+
+    .darkMode .personal p {
+        color: #ffd8d8;
+    }
+
+    .darkMode .info {
+        color: #ffaaa5;
+    }
+
+    .darkMode .spotify {
+        color: #ffaaa5;
+    }
+
 @media (max-width: 900px) {
     header {
         padding: 40px 0;
@@ -207,6 +267,11 @@ footer a:hover {
 
     .title {
         font-size: 20px;
+        color: #5f6769;
+    }
+
+    .overview h3 {
+        color: #dfcdc3
     }
 
     .overview p {
@@ -274,6 +339,7 @@ footer a:hover {
     <section class="grid grid-2-col">
         <div class="overview">
             <h3 class="text-center">Overview</h3>
+            <h6 class="text-center"><em>Overview Provided from Amazon</em></h6>
 
                 <p><b>“Meticulously researched and rewarding to read…Thomas is a gifted storyteller.” 
                  ―<em>The New York Times Book Review</em></b></p>
@@ -372,7 +438,7 @@ footer a:hover {
     
 <section class="grid grid-3-col-footer">
     <div>
-        <h3>Where to Buy</h3>
+        <h3 class="info">Where to Buy</h3>
         <ul>
             <li><p><a href="https://www.indiebound.org/indie-store-finder" target="_blank">Indepedent Bookstores</a></p></li>
             <li><p><a href="https://www.amazon.com/gp/product/1137280050/ref=x_gr_bb_amazon?ie=UTF8&tag=x_gr_bb_amazon-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=1137280050&SubscriptionId=1MGPYB6YW3HWK55XCGG2" target="_blank"> Amazon</a></p></li>
@@ -382,14 +448,14 @@ footer a:hover {
     </div>
 
     <div>
-        <h3>Reviews</h3>
+        <h3 class="info">Reviews</h3>
             <p><a href="https://www.goodreads.com/book/show/25663714-because-of-sex" target="_blank">GoodReads</a></p>
             <p><a href="https://www.nytimes.com/2016/03/13/books/review/because-of-sex-by-gillian-thomas.html" target="_blank"><em>The New York Times</em></a> </p>
           
     </div>
 
     <div>
-        <h3>Podcasts & Interviews</h3>
+        <h3 class="info">Podcasts & Interviews</h3>
         <p><a href="https://www.dissentmagazine.org/blog/belabored-podcast-99-sex-gillian-thomas/" target="_blank">Belabored Podcast</a> by <em>Dissent</em> Magazie</p>
         <p><a href="https://www.aclu.org/podcast/the-decade-long-fight-for-pregnant-workers" target="_blank">Liberty Podcast</a> by the American Civil Liberties Union </p>
     </div>
@@ -433,7 +499,25 @@ footer a:hover {
             <a href="https://www.shecodes.io/contests/life-changing-book" target="_blank">2023 SheCodes Challenge </a></p>
         
         <p>This site is <a href="https://github.com/tammiramsey/SheCodes-Challenge-Book" target="_blank"> open source</a> <i class="fa fa-brands fa-github" style="color: #FFF;"></i> </p>
+
+        <button class="darkModeButton"> Dark Mode</button>
     </footer>
+
+    <script>
+        function changeMode() {
+            let body = document.querySelector("body");
+            if (body.classList.contains("darkMode")) {
+                body.classList.remove("darkMode");
+            }
+            else {
+                body.classList.add("darkMode");
+            }
+        }
+
+        let theme = document.querySelector(".darkModeButton")
+        theme.addEventListener('click', changeMode)
+
+    </script>
 
 </body>
 </html>

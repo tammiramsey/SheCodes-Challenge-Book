@@ -326,6 +326,7 @@ footer a:hover {
         border-radius: 4px;
     }
 
+
 @media (max-width: 900px) {
     header {
         padding: 40px 0;
@@ -341,7 +342,13 @@ footer a:hover {
     }
 
     footer {
-        width: 100%;
+        margin-left: 8px;
+        margin-right: auto;
+    }
+
+    footer > p{
+        padding: 8px;
+        line-height: 1.1;
     }
 
     section {
@@ -370,10 +377,11 @@ footer a:hover {
 
     .grid-2-col {
         margin-left: 5px;
+        width:100%;
     }
 
     .personal {
-        margin-left: 5px;
+        margin-left: 8px;
         margin-right: auto;
     }
 
@@ -588,11 +596,11 @@ footer a:hover {
 </main>   
 
     <footer>
-        <p>This page was created by <a href="https://www.linkedin.com/in/tammi-ramsey/" target="_blank">Tammi Ramsey</a> <i class="fa fa-brands fa-linkedin" style="color: #FFF;"></i> </p>
+        <p>This page was created by <a href="https://www.linkedin.com/in/tammi-ramsey/" target="_blank">Tammi Ramsey</a>  <i class="fa fa-brands fa-linkedin" style="color: #FFF;" id="linkedin"></i> </p>
         <p>I created this page for the 
             <a href="https://www.shecodes.io/contests/life-changing-book" target="_blank">2023 SheCodes Challenge </a> about a life-changing book</p>
         
-        <p>This site is <a href="https://github.com/tammiramsey/SheCodes-Challenge-Book" target="_blank"> open source</a> <i class="fa fa-brands fa-github" style="color: #FFF;"></i> </p>
+        <p>This site is <a href="https://github.com/tammiramsey/SheCodes-Challenge-Book" target="_blank"> open source</a>   <i class="fa fa-brands fa-github" style="color: #FFF;" id="github"></i> </p>
 
         <button class="darkModeButton" id="button"> Dark Mode</button>
     </footer>
@@ -603,11 +611,15 @@ footer a:hover {
             if (body.classList.contains("darkMode")) {
                 body.classList.remove("darkMode");
                 document.getElementById("button").innerHTML = "Dark Mode";
+                document.getElementById("github").style.color = "#FFF";
+                document.getElementById("linkedin").style.color = "#FFF";
                 
             }
             else {
                 body.classList.add("darkMode");
                 document.getElementById("button").innerHTML = "Light Mode";
+                document.getElementById("github").style.color = "#302939";
+                document.getElementById("linkedin").style.color = "#302939";
             }
         }
 
